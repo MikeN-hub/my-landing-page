@@ -1,0 +1,42 @@
+.todo_app {
+  width: 500px;
+  height: 750px;
+  margin: 50px auto;
+  border: 2px solid teal;
+  border-radius: 20px;
+  h2 {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid black;
+  }
+}
+
+.todo_list {
+}
+
+.todo {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  &input {
+  }
+  .text {
+    margin-left: 10px;
+  }
+  .edit {
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .remove {
+    margin-left: 10px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+}

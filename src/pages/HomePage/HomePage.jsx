@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import todo_img from '../../assets/images/todo_img.jpeg'
 import styles from './HomePage.module.scss'
 
@@ -13,10 +13,13 @@ const HomePage = () => {
       <main>
         <div className='progects_pic'>
           <div className='todo_pic'>
-            <img src={todo_img} alt='todo-pic' width={200} />
+            <Link to='todo-app'>
+              <img src={todo_img} alt='todo-pic' width={200} />
+            </Link>
           </div>
         </div>
       </main>
+      <Outlet />
     </div>
   )
 }
